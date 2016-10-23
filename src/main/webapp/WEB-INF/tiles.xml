@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">  
+<tiles-definitions>  
+    <!-- Base Define -->
+   
+    
+    
+    <definition name="base.definition" 
+        template="/WEB-INF/pages/layouts/layout.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/pages/head.jsp" />  
+        <put-attribute name="head" value="/WEB-INF/pages/header.jsp"></put-attribute>
+        <put-attribute name="menu" value="/WEB-INF/pages/navbar.jsp" />  
+        <put-attribute name="body" value="" />  
+    </definition>  
+ 
+    <!-- Home Page -->
+    <definition name="home" extends="base.definition">  
+        <put-attribute name="title" value="Home Page" />  
+        <put-attribute name="body" value="/WEB-INF/pages/home.jsp" />  
+    </definition>  
+       
+    <!-- ContactUs Page -->
+    <definition name="users" extends="base.definition">  
+        <put-attribute name="title" value="Users" />  
+        <put-attribute name="body" value="/WEB-INF/pages/client/manage/user/users.jsp" />  
+    </definition>  
+    
+    <definition name="orgdefinition" extends="base.definition">  
+        <put-attribute name="title" value="Company Details" />  
+        <put-attribute name="body" value="/WEB-INF/pages/organization/orgdefinition.jsp" />  
+    </definition>  
+    
+    <definition name="currency" extends="base.definition">  
+        <put-attribute name="title" value="Currency Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/setups/currencies.jsp" />  
+    </definition> 
+    
+     <definition name="syssequences" extends="base.definition">  
+        <put-attribute name="title" value="Sequences Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/setups/sequences.jsp" />  
+    </definition> 
+    
+     <definition name="classes" extends="base.definition">  
+        <put-attribute name="title" value="Classes Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/classes/classes.jsp" />  
+    </definition> 
+    
+    <definition name="rentalstruct" extends="base.definition">  
+        <put-attribute name="title" value="Rental Structures" />  
+        <put-attribute name="body" value="/WEB-INF/pages/setups/rentalstructures.jsp" />  
+    </definition> 
+    
+      <definition name="tenantList" extends="base.definition">  
+        <put-attribute name="title" value="Landlord Details" />  
+        <put-attribute name="body" value="/WEB-INF/pages/setups/tenantdef.jsp" />  
+    </definition> 
+
+
+      <definition name="paymodesList" extends="base.definition">  
+        <put-attribute name="title" value="Payment Modes List" />  
+        <put-attribute name="body" value="/WEB-INF/pages/setups/paymentmodes.jsp" />  
+    </definition>
+    
+     <definition name="newbusiness" extends="base.definition">  
+        <put-attribute name="title" value="New Business Transactions" />  
+        <put-attribute name="body" value="/WEB-INF/pages/uwtrans/policyTransList.jsp" />  
+    </definition> 
+    
+     <definition name="rentalform" extends="base.definition">  
+        <put-attribute name="title" value="Enter Rental Structure Details" />  
+        <put-attribute name="body" value="/WEB-INF/pages/setups/rentalstructform.jsp" />  
+    </definition> 
+    
+    <definition name="bindershome" extends="base.definition">  
+        <put-attribute name="title" value="Binder Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/binders/binderdef.jsp" />  
+    </definition> 
+    
+    <definition name="productsform" extends="base.definition">  
+        <put-attribute name="title" value="Product Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/products/productdef.jsp" />  
+    </definition> 
+    
+    <definition name="countries" extends="base.definition">  
+        <put-attribute name="title" value="Countries/Counties/Towns Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/setups/countries.jsp" />  
+    </definition> 
+    
+     <definition name="orgSetupScreen" extends="base.definition">  
+        <put-attribute name="title" value="Company Set Up" />  
+        <put-attribute name="body" value="/WEB-INF/pages/submenus/orgSetupScreen.jsp" />  
+    </definition>  
+    
+     <definition name="trans" extends="base.definition">  
+        <put-attribute name="title" value="Transactions" />  
+        <put-attribute name="body" value="/WEB-INF/pages/submenus/trans.jsp" />  
+    </definition>  
+    
+     <definition name="accounttypes" extends="base.definition">  
+        <put-attribute name="title" value="Account Types Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/accountsetups/acctypes.jsp" />  
+    </definition> 
+    
+    <definition name="accounts" extends="base.definition">  
+        <put-attribute name="title" value="Account List" />  
+        <put-attribute name="body" value="/WEB-INF/pages/accountsetups/accounts.jsp" />  
+    </definition> 
+    
+     <definition name="acctsform" extends="base.definition">  
+        <put-attribute name="title" value="Account Definition" />  
+        <put-attribute name="body" value="/WEB-INF/pages/accountsetups/accountsform.jsp" />  
+    </definition>
+    
+     <definition name="clients" extends="base.definition">  
+        <put-attribute name="title" value="Clients List" />  
+        <put-attribute name="body" value="/WEB-INF/pages/clients/clientList.jsp" />  
+    </definition>
+    
+    <definition name="clientsform" extends="base.definition">  
+        <put-attribute name="title" value="Client Details" />  
+        <put-attribute name="body" value="/WEB-INF/pages/clients/clientform.jsp" />  
+    </definition>
+    
+     <definition name="invoices" extends="base.definition">  
+        <put-attribute name="title" value="Invoice List" />  
+        <put-attribute name="body" value="/WEB-INF/pages/invoices/invoicelist.jsp" />  
+    </definition>
+    
+     <definition name="invoiceform" extends="base.definition">  
+        <put-attribute name="title" value="Invoice Details" />  
+        <put-attribute name="body" value="/WEB-INF/pages/invoices/invoice.jsp" />  
+    </definition>
+    
+     <definition name="reviseinvoice" extends="base.definition">  
+        <put-attribute name="title" value="Revise Tenant Invoice" />  
+        <put-attribute name="body" value="/WEB-INF/pages/invoices/reviseinvoice.jsp" />  
+    </definition>
+    
+    <definition name="tentrans" extends="base.definition">  
+        <put-attribute name="title" value="Tenant Transactions" />  
+        <put-attribute name="body" value="/WEB-INF/pages/submenus/transactionscreen.jsp" />  
+    </definition> 
+    
+    <definition name="receiptslist" extends="base.definition">  
+        <put-attribute name="title" value="Receipts" />  
+        <put-attribute name="body" value="/WEB-INF/pages/receipts/receiptlist.jsp" />  
+    </definition>
+    
+     <definition name="receiptsform" extends="base.definition">  
+        <put-attribute name="title" value="Receipts Entry" />  
+        <put-attribute name="body" value="/WEB-INF/pages/receipts/receiptform.jsp" />  
+    </definition>
+     
+    
+</tiles-definitions> 
