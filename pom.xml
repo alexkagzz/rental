@@ -21,7 +21,7 @@
 		<spring-security.version>4.0.2.RELEASE</spring-security.version>
 
 		<!-- JSON -->
-		<jackson.version>2.6.2</jackson.version>
+		<jackson.version>2.9.5</jackson.version>
 
 
 		<!-- Logging -->
@@ -62,7 +62,7 @@
 	<repositories>
 		<repository>
 			<id>Maven2</id>
-			<url>http://repo1.maven.org/maven2/</url>
+			<url>https://repo1.maven.org/maven2/</url>
 		</repository>
 		<repository>
 			<id>smartbear-sweden-repository</id>
