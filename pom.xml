@@ -21,7 +21,7 @@
 		<spring-security.version>4.0.2.RELEASE</spring-security.version>
 
 		<!-- JSON -->
-		<jackson.version>2.9.5</jackson.version>
+		<jackson.version>2.12.7.1</jackson.version>
 
 
 		<!-- Logging -->
